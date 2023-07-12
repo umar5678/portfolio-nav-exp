@@ -1,7 +1,11 @@
+@use "../../styles/variables.scss" as v;
+img{
+    margin-bottom: -4px;
+}
 #projects{
     height: 100vh;
     width: 100vw;
-    // background-color: rgb(204, 95, 214);
+    background-color: v.$clr-bg-2;
     display: grid;
     place-items: center;
 

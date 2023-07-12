@@ -1,3 +1,4 @@
+@use "./variables.scss" as v;
 *{
     margin: 0;
     padding: 0;
@@ -7,15 +8,21 @@
 
 
 body{
+
     overflow-x: hidden ;
-    background-color: rgb(5, 5, 5);
+    background-color: v.$clr-bg-1;
     color: white;
 }
+
 .blur{
     overflow-y: hidden;
 }
-
-
+h1,h2,h3,h4,h5,h6,a,button{
+    font-family: v.$font-primery;
+}
+p{
+    font-family: v.$font-secondary;
+}
 
 
 a{

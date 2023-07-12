@@ -1,9 +1,30 @@
-import React from 'react'
+// import React from 'react'
 import "./about.scss"
+import me from '../../images/umar-farooq.png'
+
 const About = () => {
   return (
     <div id='about'>
+      <div className="container">
         <h1>About</h1>
+        <div className='right-left'>
+          <div className="left">
+            <p>A self-taught UI/UX designer, functioning in the industry for 3+ years now.
+              I make meaningful and delightful digital products that create an equilibrium
+              between user needs and business goals.</p>
+              <p>A self-taught UI/UX designer, functioning in the industry for 3+ years now.
+              I make meaningful and delightful digital products that create an equilibrium
+              between user needs and business goals.</p>
+          </div>
+          <div className="right">
+            <div className="img-div"><img src={me} alt="Umar Farooq" /></div>
+            
+          </div>
+        </div>
+
+
+      </div>
+
 
     </div>
   )

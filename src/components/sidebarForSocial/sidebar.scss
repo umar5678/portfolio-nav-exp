@@ -1,0 +1,29 @@
+@use "../../styles/variables.scss" as v;
+
+.sidebar{
+    width: 60px;
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    li{
+        padding: 1rem 0;
+        a{
+            color: rgb(199, 199, 199);
+            transition: all 0.4s ;
+            &:hover{
+                color: v.$clr-blue;
+            }
+           >svg{
+                height: 1.5rem;
+                width: 3rem;
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        display: none;
+        
+    }
+}

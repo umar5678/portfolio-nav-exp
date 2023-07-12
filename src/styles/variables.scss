@@ -1,0 +1,90 @@
+// ---------- fonts ----------- //
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/Inter/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/Inter/Inter-Medium.ttf');
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/Inter/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/Inter/Inter-Black.ttf');
+}
+
+
+//  ------ Lexend -------- //
+
+@font-face {
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/Lexend/Lexend-Regular.ttf');
+}
+@font-face {
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/Lexend/Lexend-Medium.ttf');
+}
+@font-face {
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/Lexend/Lexend-Bold.ttf');
+}
+@font-face {
+    font-family: "Lexend";
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/Lexend/Lexend-Black.ttf');
+}
+// --------  Scss variables for font ----------- //
+
+$font-primery: "Inter", sans-sarif;
+$font-primery-regular: 400;
+$font-primery-500: 500;
+$font-primery-700: 700;
+$font-primery-900: 900;
+
+$font-secondary: "Lexend" , sans-sarif;
+$font-secondary-regular: 400;
+$font-secondary-500: 500;
+$font-secondary-700: 700;
+$font-secondary-900: 900;
+
+
+// ----------- Colors ----------- //
+
+$clr-bg-1: #0f1216;
+$clr-bg-2: #070D12;
+$clr-white: #EEFAFF;
+$clr-white-dim: #C4DADE;
+$clr-blue: #00B2FF;
+$clr-blur-dark: #006EFD;
+$clr-purple: #AE18F2;
+$clr-voilet: rgba(89, 61, 253, 1);
+$clr-blue-dim: rgba(0, 179, 255, 0.5);
+
+// ----- Breakpoints ------- //
+
+$tablet: 780px;
+$mobile: 600px;
+
+
+
+
+
+
