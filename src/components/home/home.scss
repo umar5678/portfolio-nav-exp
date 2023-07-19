@@ -7,6 +7,10 @@
     width: 100vw;
     background-color: v.$clr-bg-2;
 
+    @include m.tablet{
+        height: 70vh;
+    }
+
     .container{
         max-width: min(90vw, 1200px);
         padding-top: 6rem;
@@ -44,6 +48,9 @@
                 background: linear-gradient(45deg, v.$clr-blue, rgb(0, 81, 255) );
                 &:hover{
                     background: linear-gradient(45deg, rgb(0, 81, 255), v.$clr-blue );
+                }
+                @include m.mobile{
+                    margin-right: 2rem;
                 }
             }
         }

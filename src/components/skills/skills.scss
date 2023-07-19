@@ -1,12 +1,105 @@
-#skills{
-    height: 100vh;
-    width: 100vw;
-    // background-color: rgb(77, 247, 61);
-    display: grid;
-    place-items: center;
+@use "../../styles/variables.scss" as v;
+@use "../../styles/mixins.scss" as m;
 
-    h1, p{
-        text-align: center;
+
+#skills{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+
+    .container{
+        margin-inline: auto;
+    width: min(90vw, 1300px);
+    // background-color: rgba(137, 43, 226, 0.178);
+    
+    .tech-skills{
+        p{
+            padding: .7rem 0;
+            color: v.$clr-white-dim;
+        }
+
+        .icons{
+            display: flex;
+           gap: 2rem;
+           flex-wrap: wrap;
+
+           @include m.mobile{
+            gap: 1rem;
+           }
+            div{
+                display: flex;
+                align-items: center;
+                // flex-wrap: wrap;
+                padding: .8rem;
+                height: 3rem;
+                border-radius: 12px;
+                transition: all 0.3s;
+                &:hover{
+                    background-color: rgba(0, 140, 255, 0.11);
+                  
+                }
+
+                
+
+                svg{
+                    
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    // margin-left: 2rem;
+                    color: v.$clr-blue;
+                    transition: all 0.7s;
+                }
+                .js{
+                    color:yellow;
+                }
+                .html{
+                    color: rgb(255, 94, 0);
+                }
+                .css{
+                    color: blueviolet;
+                }
+                .react{
+                    color: v.$clr-blur-dark;
+                }
+                .tailwind{
+                    color: v.$clr-purple;
+                }
+                .sass{
+                    color: rgb(255, 11, 214);
+                }
+                .figma{
+                    color: greenyellow;
+                }
+                .github{
+                    color: rgb(255, 255, 255);
+                }
+                .git{
+                    color: red;
+                }
+               
+                p{
+                    margin-left: 1rem ;
+                   font-size: 1.2rem;
+                    display: inline-block;
+                    color: v.$clr-white;
+                }
+                @include m.mobile{
+                    background-color: rgba(0, 140, 255, 0.11);
+                    height: 2.4rem;
+                    svg{
+                        // color: v.$clr-purple;
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+
+                }
+            }
+        }
     }
-   
+    }
+ 
+
 }

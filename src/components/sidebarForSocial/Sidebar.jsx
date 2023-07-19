@@ -1,12 +1,12 @@
-import React from 'react'
-import  socialMedia  from "./../../configSocial"
+// import React from 'react'
+import socialMedia from "./../../configSocial"
 import { Icon } from "./../icons/icon"
 import "./sidebar.scss"
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-    {
+      {
         socialMedia && 
         socialMedia.map(({name, url} , i ) => (
             <li key={i}>
@@ -16,8 +16,11 @@ const Sidebar = () => {
             </li>
         ))
     }
+
+
     </div>
   )
 }
 
 export default Sidebar
+

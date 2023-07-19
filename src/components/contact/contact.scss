@@ -1,12 +1,51 @@
-#contact{
-    height: 100vh;
-    width: 100vw;
-    // background-color: rgb(71, 131, 131);
-    display: grid;
-    place-items: center;
+@use "../../styles/variables.scss" as v;
+@use "../../styles/mixins.scss" as m;
 
-    h1, p{
-        text-align: center;
+#contact{
+    height: 80vh;
+    width: 100vw;
+    background-color: v.$clr-bg-2;
+    // background-color: rgba(0, 0, 255, 0.068);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: clamp(2.5rem, 1.9512rem + 2.3415vw, 4rem);
+        color: v.$clr-white;
     }
-   
+    p{
+        max-width: 700px;
+        text-align: center;
+        padding: 1rem;
+        margin: 2rem 0;
+        color: v.$clr-white-dim;
+        line-height: 25px;
+    }
+
+    .contact-btn-group{
+        display: flex;
+        gap: 2rem;
+        a{
+            cursor: pointer;
+            // padding: 1rem;
+            button{
+                height: 2.5rem;
+                width: 7rem;
+                cursor: pointer;
+                background-color: v.$clr-blue;
+                font-size: 18px;
+                color: v.$clr-white;
+                border: none;
+                border-radius: 12px;
+                transition: all .3s;
+                box-shadow: rgba(0, 0, 0, 0.459) 0px 5px 10px;
+
+                &:hover{
+                    background-color: v.$clr-blur-dark;
+                    box-shadow: rgba(0, 0, 0, 0.459) 0px 5px 20px;
+                }
+            }
+        }
+    }
 }

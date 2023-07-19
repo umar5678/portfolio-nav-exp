@@ -1,0 +1,142 @@
+@use "../../styles/variables.scss" as v;
+@use "../../styles/mixins.scss" as m;
+
+.featured-project-card {
+    padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  align-items: center;
+    grid-gap: 1vw;
+  width: min(85vw, 1000px);
+  margin-inline: auto;
+  background-color: v.$clr-bg-1;
+  border-radius: 1rem;
+  padding: 1rem ;
+  box-shadow: rgba(0, 0, 0, 0.473) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 15px 12px;
+  transition: all 0.3s;
+
+  &:hover{
+    //   transform: scale(1.02);
+      box-shadow: rgba(0, 0, 0, 0.63) 0px 19px 38px, rgba(0, 0, 0, 0.445) 0px 15px 12px;
+  }
+  @include m.mobile{
+    box-shadow: v.$clr-blue 0px 0px 6px;
+}
+
+  &:nth-of-type(even){
+    .project-description{
+        grid-area: 1 / 2 ;
+
+        text-align: right;
+        .tech-stack{
+            justify-content: end;
+        }
+        .link-btn-group{
+            justify-content: end;
+            .btn{
+                margin-right: 0;
+                margin-left: 2rem;
+            }
+        }
+    }
+  }
+
+  .project-description {
+ 
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    p {
+    //   padding: 1rem;
+      text-align: justify;
+      max-width: 400px;
+      color: v.$clr-white-dim;
+    //   font-size: 14px;
+    //   background: linear-gradient(
+    //     45deg,
+    //     rgba(0, 115, 192, 0.699),
+    //     rgba(0, 0, 192, 0.623)
+    //   );
+      margin: 12px 0;
+      border-radius: 12px;
+    //   position: sticky;
+    //   z-index: 1;
+    }
+
+    .tech-stack {
+      display: flex;
+      span {
+        font-size: 14px;
+        padding: 0 0.6rem;
+      }
+    }
+    .link-btn-group {
+      display: flex;
+      .btn {
+        cursor: pointer;
+        height: 2rem;
+        width: 6rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        color: v.$clr-white;
+        transition: 0.4s;
+        background: linear-gradient(45deg, v.$clr-blue, rgb(0, 81, 255));
+        &:hover {
+          background: linear-gradient(45deg, rgb(0, 81, 255), v.$clr-blue);
+          
+        }
+      }
+    }
+  }
+
+  .project-img {
+    img {
+      height: 200px;
+      border-radius: 1rem;
+      // min-height: 20vw;
+      @include m.mobile{
+        width: 300px;
+      }
+    }
+  }
+  @include m.tablet{
+    display: flex;
+    flex-direction: column-reverse;
+    width: max-content;
+    &:nth-of-type(even){
+      .project-description{
+
+
+          text-align: left;
+          .tech-stack{
+              justify-content: start;
+          }
+          .link-btn-group{
+              justify-content: start;
+              
+              .btn{
+                
+                margin-right: 2rem;
+                  margin-left: 0;
+              }
+          }
+      }
+    }
+    .project-description{
+      h1{
+        padding: 1rem 0 0 0;
+      }
+      p{
+        max-width: 300px;
+      }
+      
+    }
+    
+
+  }
+}

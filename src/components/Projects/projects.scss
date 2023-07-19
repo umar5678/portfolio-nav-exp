@@ -1,16 +1,37 @@
 @use "../../styles/variables.scss" as v;
-img{
-    margin-bottom: -4px;
+@use "../../styles/mixins.scss" as m;
+img {
+  margin-bottom: -4px;
 }
-#projects{
-    height: 100vh;
-    width: 100vw;
-    background-color: v.$clr-bg-2;
-    display: grid;
-    place-items: center;
+#projects {
+  padding-top: 3rem;
+  width: 100vw;
+  background-color: v.$clr-bg-2;
+  .container-for-heading{
+    max-width: min(90vw, 900px);
+    margin-inline: auto;
+    padding: 2rem 0;
+  }
 
-    h1, p{
-        text-align: center;
+
+  .container {
+    margin-inline: auto;
+    max-width: min(90vw, 1300px);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // gap: 2rem;
+
+    .proj-sec-heading{
+      padding: 1rem 0 3rem 0;
+      font-size: clamp(1.8rem, 1.7268rem + 0.3122vw, 2rem);
     }
+    
+
+
    
+    @include m.tablet{
+      padding-top: 2rem ;
+    }
+  }
 }

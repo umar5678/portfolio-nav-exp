@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as v;
+@use "../../styles/mixins.scss" as m;
 .header {
   display: flex;
   height: 60px;

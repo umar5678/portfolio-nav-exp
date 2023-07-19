@@ -1,0 +1,88 @@
+@use "../../styles/variables.scss" as v;
+@use "../../styles/mixins.scss" as m;
+.other-projects{
+    padding-top:  6rem;
+
+    h1{
+        padding: 1rem 0 3rem 0;
+        font-size: clamp(1.8rem, 1.7268rem + 0.3122vw, 2rem);
+    }
+}
+.other-projects-container{
+    padding: 3rem 0;
+    // background-color: rgba(250, 203, 51, 0.089);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+
+    
+}
+
+// for project card
+.project-card{
+    // height: 160px;
+    max-width: 340px;
+    min-width: 280px;
+    background-color : v.$clr-bg-1;
+    border-radius: 12px;
+    padding: .6rem;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 15px 12px;
+
+    &:hover{
+        transform: scale(1.02);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    @include m.mobile{
+        box-shadow: v.$clr-blue 0px 0px 6px;
+    }
+    .upper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .project-icon{
+            svg{
+                height: 3rem;
+                width: 3rem;
+                color: v.$clr-blue;
+            }
+        }
+
+        .links{
+            a{
+                color: white;
+                padding-left: 1.6rem;
+                padding-right: .4rem;
+                svg{
+                    height: 1.6rem;
+                    width: 1.6rem;
+                    color: v.$clr-blue;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: v.$clr-blur-dark;
+                    }
+
+                }
+            }
+        }
+    }
+    .lower{
+
+        .title{
+            color: v.$clr-white;
+            font-weight: 400;
+            font-size: 1.4rem;
+            padding: .2rem 0;
+
+        }
+        .desc{
+            p{
+                font-size: 15px;
+                color: v.$clr-white-dim;
+                padding: .2rem 0;
+            }
+        }
+    }
+}

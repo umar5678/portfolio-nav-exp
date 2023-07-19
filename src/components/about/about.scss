@@ -5,6 +5,10 @@
     padding-top: 4rem;
     height: 60vh;
     width: 100vw;
+    @include m.tablet{
+        height: 100vh;
+        padding-top: 2rem;
+    }
 
     .container{
         max-width: min(90vw, 900px);
@@ -16,7 +20,7 @@
             align-items: center;
             @include m.tablet{
                 flex-direction: column;
-                gap: 2rem;
+                gap: 0.5rem;
 
             }
             .left{
@@ -38,12 +42,13 @@
                     bottom: -1px;
                     z-index: -1;
                     border-radius: 50% 12px 0 12px ;
-                    display: block;
+                    // display: block;
 
                 }
                 .img-div{
-                    z-index: -1;
                     img{
+                        position: sticky;
+                        z-index: -1;
                     width: 200px;
                 }
                 }

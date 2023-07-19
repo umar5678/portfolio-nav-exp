@@ -10,18 +10,24 @@ import Sidebar from "./components/sidebarForSocial/Sidebar"
 
 
 
+
 const App = () => {
-  return (<>
-  <Header/>
-  <div id="content">
-  <Sidebar/>
-  <Home/>
-  <About/>
-  <Projects/>
-  <Skills/>
-  <Contact/>
-  </div>
-  </>
+
+
+  return (
+    <>
+      <Header />
+      <div id="content">
+        <Sidebar />
+      
+          <Home />
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+
+      </div>
+    </>
   )
 }
 

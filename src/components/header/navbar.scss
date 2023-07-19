@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as v;
+@use "../../styles/mixins.scss" as m;
 .desktop-navbar{
     display: flex;
     align-items: flex-end;
@@ -10,6 +12,10 @@
             padding: 0 3rem;
             a{
                 color: white;
+                transition: all .3s;
+                &:hover{
+                    color: v.$clr-blue;
+                }
             }
         }  
     }
