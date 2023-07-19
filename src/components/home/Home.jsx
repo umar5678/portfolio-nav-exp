@@ -13,8 +13,8 @@ const Home = () => {
           <h2>I bring digital visions to life as a web developer</h2>
           <p>Welcome to my portfolio as a <span>Frontend Developer</span></p>
           <div className="btn-group">
-            <a href="#"><button className="btn">GitHub</button></a>
-            <a href="#"><button className="btn" href="#">Linkedin</button></a>
+            <a href="https://github.com/umar5678"  target="_blank" rel="noreferrer"><button className="btn">GitHub</button></a>
+            <a href="https://www.linkedin.com/in/umar-farooq-823509220/" target="_blank" rel="noreferrer"><button className="btn" href="#">Linkedin</button></a>
           </div>
          </div>
     </div>

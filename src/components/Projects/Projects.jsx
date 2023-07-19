@@ -15,7 +15,7 @@ const Projects = () => {
     <div id='projects'>
       {/* <div className="container-for-heading"> <h1>Projects I have built </h1></div> */}
       <div className="container">
-        <h1 className="proj-sec-heading">Projects I ahve built</h1>
+        <h1 className="proj-sec-heading">Somethings I have built</h1>
         {
           featuredProjects.map((project) => (
             <FeaturedProjects key={project.id} project={project} />

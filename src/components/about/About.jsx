@@ -10,16 +10,12 @@ const About = () => {
         <div className='right-left'>
           <div className="left">
             {/* keep about short */}
-            <p>A self-taught UI/UX designer, functioning in the industry for 3+ years now.
-              I make meaningful and delightful digital products that create an equilibrium
-              between user needs and business goals.</p>
-              <p>delightful digital products that create an equilibrium
-              between user needs and business goals.</p>
-              <p>Let s connect and explore exciting opportunities together. Feel free to reach out to me via email or connect with me on LinkedIn!</p>
+            <p>A self-taught Frontend Developer with a passion for crafting visually appealing and user-friendly interfaces.</p>
+            <p>While my expertise has been cultivated through independent learning rather than formal training or prior experience, I take pride in possessing an exceptional grasp of various technologies. My journey has led me to develop several small projects that effectively showcase my skills and dedication to this field.</p>
           </div>
           <div className="right">
             <div className="img-div"><img src={me} alt="Umar Farooq" /></div>
-            
+
           </div>
         </div>
 
