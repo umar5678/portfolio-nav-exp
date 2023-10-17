@@ -19,12 +19,12 @@ const App = () => {
       <Header />
       <div id="content">
         <Sidebar />
-      
-          <Home />
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
+
+        <Home />
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
 
       </div>
     </>

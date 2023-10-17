@@ -1,63 +1,45 @@
 @use "../../styles/variables.scss" as v;
 @use "../../styles/mixins.scss" as m;
 
-#about{
-    padding-top: 4rem;
-    height: 60vh;
-    width: 100vw;
-    @include m.tablet{
-        height: 100vh;
-        padding-top: 2rem;
-    }
+#about {
+  padding-top: 4rem;
+  height: 60vh;
+  width: 100vw;
+  @include m.tablet {
+    height: 100vh;
+    padding-top: 2rem;
+  }
 
-    .container{
-        max-width: min(90vw, 900px);
-        margin-inline: auto;
+  .container {
+    max-width: min(90vw, 900px);
+    margin-inline: auto;
 
-        .right-left{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            @include m.tablet{
-                flex-direction: column;
-                gap: 0.5rem;
-
-            }
-            .left{
-                p{
-                    margin: 1rem 0;
-                    max-width: 500px;
-                    color: v.$clr-white-dim;
-                }
-            }
-            .right{
-                position: relative;
-            
-                &::before{
-                    content: '';
-                    height: 180px;
-                    width: 200px;
-                    background: linear-gradient(45deg, v.$clr-blue, rgb(0, 81, 255) );
-                    position: absolute;
-                    right: 0;
-                    bottom: -1px;
-                    z-index: -1;
-                    border-radius: 50% 12px 0 12px ;
-                    // display: block;
-
-                }
-                .img-div{
-                    img{
-                        position: sticky;
-                        z-index: -1;
-                    width: 200px;
-                }
-                }
-                
-            }
+    .right-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include m.tablet {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .left {
+        p {
+          margin: 1rem 0;
+          max-width: 500px;
+          color: v.$clr-white-dim;
         }
-        
-    }
+      }
+      .right {
+        position: relative;
 
-   
+        .img-div {
+          img {
+            position: sticky;
+            z-index: -1;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
 }
